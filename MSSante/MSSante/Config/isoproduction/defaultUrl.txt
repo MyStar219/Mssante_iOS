@@ -1,0 +1,22 @@
+//
+//  defaultUrl.h
+//  MSSante
+//
+//  Created by Labinnovation on 10/04/2015.
+//  Copyright (c) 2015 Capgemini. All rights reserved.
+//
+
+#ifndef MSSante_defaultUrl_h
+#define MSSante_defaultUrl_h
+
+
+#define DEFAULT_ENV                    @"isoproduction"
+
+//NO Log
+#define DLog(...) 
+#define ConnectionLog(...) 
+
+//kProd Capgemini => distrib
+#define kProd @"distrib" 
+
+#endif

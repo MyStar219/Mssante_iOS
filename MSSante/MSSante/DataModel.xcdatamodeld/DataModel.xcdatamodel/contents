@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES">
+        <attribute name="contentType" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" attributeType="String" syncable="YES"/>
+        <attribute name="localFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="part" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="message" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="attachments" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <entity name="Email" representedClassName="Email" syncable="YES">
+        <attribute name="address" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="searchAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="emails" inverseEntity="Message" syncable="YES"/>
+    </entity>
+    <entity name="Folder" representedClassName="Folder" syncable="YES">
+        <attribute name="deleted" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="folderId" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="folderName" attributeType="String" syncable="YES"/>
+        <attribute name="folderNbUnread" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="initialized" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="level" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <relationship name="folders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Folder" inverseName="parentFolder" inverseEntity="Folder" syncable="YES"/>
+        <relationship name="parentFolder" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Folder" inverseName="folders" inverseEntity="Folder" syncable="YES"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="body" attributeType="String" syncable="YES"/>
+        <attribute name="conversationId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="folderId" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="isAttachment" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isBodyLarger" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isFavor" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="Boolean" defaultValueString="YES" indexed="YES" syncable="YES"/>
+        <attribute name="isUrgent" optional="YES" attributeType="Boolean" defaultValueString="NO" indexed="YES" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="shortBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="subject" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="message" inverseEntity="Attachment" syncable="YES"/>
+        <relationship name="emails" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="Email" inverseName="message" inverseEntity="Email" syncable="YES"/>
+    </entity>
+    <entity name="Modification" representedClassName="Modification" syncable="YES">
+        <attribute name="argument" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="operation" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Attachment" positionX="585" positionY="269" width="128" height="133"/>
+        <element name="Email" positionX="223" positionY="351" width="128" height="118"/>
+        <element name="Folder" positionX="799" positionY="396" width="128" height="163"/>
+        <element name="Message" positionX="421" positionY="185" width="128" height="268"/>
+        <element name="Modification" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

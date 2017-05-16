@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnrollementCController">
+            <connections>
+                <outlet property="Password" destination="ki3-Ak-N1N" id="jZm-Vs-zdW"/>
+                <outlet property="PasswordConfirm" destination="eSj-sb-h9N" id="l3Q-7z-Nwx"/>
+                <outlet property="popupView" destination="a8b-MK-8ZB" id="aHO-D2-fGw"/>
+                <outlet property="view" destination="gMf-YI-QGE" id="XfO-1b-scM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gMf-YI-QGE">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="Etape 3/3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-D5-7RW">
+                    <rect key="frame" x="40" y="50" width="115" height="32"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" red="0.13333334029999999" green="0.37254902719999999" blue="0.43921571970000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" image="barre_progression3.png" translatesAutoresizingMaskIntoConstraints="NO" id="iv3-cU-w3x">
+                    <rect key="frame" x="607" y="65" width="121" height="7"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="jT4-O1-ryD">
+                    <rect key="frame" x="40" y="162" width="688" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Choisissez votre mot de passe">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="24" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="24" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="1ex-Iy-5Wp">
+                    <rect key="frame" x="40" y="200" width="688" height="90"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+TGUgbW90IGRlIHBhc3NlIGVzdCBzcMOpY2lmaXF1ZSDDoCADY2V0IGFwcGFyZWlsIGV0IHZvdXMgc2Vy
+YSBkZW1hbmTDqSDDoCBjaGFjdW5lIGRlIHZvcyBjb25uZXhpb25zIMOgIGwnYXBwbGljYXRpb24gZGVw
+dWlzIHZvdHJlIGFwcGFyZWlsIG1vYmlsZS4
+</string>
+                            <attributes>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-Et-zcT">
+                    <rect key="frame" x="40" y="349" width="688" height="51"/>
+                    <attributedString key="attributedText">
+                        <fragment content="   ">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="(1)">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="12" name="Helvetica"/>
+                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Le mot de passe doit contenir au minimum 4 caractères dont une lettre et un chiffre.">
+                            <attributes>
+                                <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="22" name="Helvetica-Light"/>
+                                <font key="NSOriginalFont" size="20" name="Helvetica-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  -Mot de passe(1)-" minimumFontSize="17" background="combobox.png" translatesAutoresizingMaskIntoConstraints="NO" id="ki3-Ak-N1N">
+                    <rect key="frame" x="111" y="408" width="547" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="547" id="fo9-EU-YFd"/>
+                        <constraint firstAttribute="height" constant="77" id="rKq-26-GxD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  -Confirmez le mot de passe(1)-" minimumFontSize="17" background="combobox.png" translatesAutoresizingMaskIntoConstraints="NO" id="eSj-sb-h9N">
+                    <rect key="frame" x="111" y="505" width="547" height="77"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pl-D4-fel" userLabel="Bouton &quot;Enregistrer&quot;">
+                    <rect key="frame" x="292" y="602" width="185" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="CN2-3k-Spv"/>
+                        <constraint firstAttribute="width" constant="185" id="eRA-Vp-xLS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" backgroundImage="bouton_Enregistrer.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Enregistrer:" destination="-1" eventType="touchUpInside" id="K1R-4W-L6E"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8b-MK-8ZB">
+                    <rect key="frame" x="0.0" y="-32" width="768" height="1024"/>
+                    <subviews>
+                        <view alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-Lz-Dkc">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fond_popup2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-XQ-GZq">
+                            <rect key="frame" x="105" y="209" width="558" height="273"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="558" id="HsH-xZ-fz6"/>
+                                <constraint firstAttribute="height" constant="273" id="f9s-N3-CAN"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Va-93-dUh" userLabel="Bouton &quot;Continuer&quot;">
+                            <rect key="frame" x="276" y="373" width="216" height="73"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="216" id="6B5-7d-7aW"/>
+                                <constraint firstAttribute="height" constant="73" id="crt-4O-p9r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="bouton_continuer.png">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Continuer:" destination="-1" eventType="touchUpInside" id="Azm-96-bFT"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="506" translatesAutoresizingMaskIntoConstraints="NO" id="iZM-st-OaO">
+                            <rect key="frame" x="131" y="245" width="506" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="c25-t8-0kG"/>
+                                <constraint firstAttribute="width" constant="506" id="l6d-DK-ltr"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Votre appareil mobile a été ajouté avec succès.
+Vous pouvez désormais accéder à votre messagerie sécurisée depuis
+cet appareil mobile.</string>
+                                    <attributes>
+                                        <color key="NSColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                        <font key="NSFont" size="23" name="Helvetica"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bSf-XQ-GZq" firstAttribute="top" secondItem="a8b-MK-8ZB" secondAttribute="top" constant="209" id="3Bn-lV-UZQ"/>
+                        <constraint firstItem="HbU-Lz-Dkc" firstAttribute="top" secondItem="a8b-MK-8ZB" secondAttribute="top" id="FP9-cC-bjE"/>
+                        <constraint firstItem="HbU-Lz-Dkc" firstAttribute="centerY" secondItem="a8b-MK-8ZB" secondAttribute="centerY" id="Kit-cP-1OJ"/>
+                        <constraint firstItem="iZM-st-OaO" firstAttribute="centerX" secondItem="bSf-XQ-GZq" secondAttribute="centerX" id="QEc-E4-kfd"/>
+                        <constraint firstAttribute="centerX" secondItem="bSf-XQ-GZq" secondAttribute="centerX" id="SZ4-d0-hKD"/>
+                        <constraint firstItem="HbU-Lz-Dkc" firstAttribute="leading" secondItem="a8b-MK-8ZB" secondAttribute="leading" id="TX4-Ej-W9P"/>
+                        <constraint firstItem="4Va-93-dUh" firstAttribute="top" secondItem="iZM-st-OaO" secondAttribute="bottom" constant="8" symbolic="YES" id="VsV-K4-cY4"/>
+                        <constraint firstAttribute="bottom" secondItem="HbU-Lz-Dkc" secondAttribute="bottom" id="g6O-dU-6dl"/>
+                        <constraint firstItem="iZM-st-OaO" firstAttribute="top" secondItem="a8b-MK-8ZB" secondAttribute="top" constant="245" id="kZ7-VC-23J"/>
+                        <constraint firstItem="iZM-st-OaO" firstAttribute="centerX" secondItem="4Va-93-dUh" secondAttribute="centerX" id="rzZ-kf-KIr"/>
+                        <constraint firstAttribute="bottom" secondItem="HbU-Lz-Dkc" secondAttribute="bottom" id="wAw-Dv-i3i"/>
+                        <constraint firstAttribute="trailing" secondItem="HbU-Lz-Dkc" secondAttribute="trailing" id="wXQ-l5-sAl"/>
+                        <constraint firstAttribute="bottom" secondItem="HbU-Lz-Dkc" secondAttribute="bottom" id="zL8-qh-Rkk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <constraints>
+                <constraint firstItem="1ex-Iy-5Wp" firstAttribute="top" secondItem="jT4-O1-ryD" secondAttribute="bottom" constant="8" id="16y-8E-ziT"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="centerX" secondItem="3pl-D4-fel" secondAttribute="centerX" id="85n-yx-53K"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="centerX" secondItem="Jrd-Et-zcT" secondAttribute="centerX" id="DEJ-lq-YZn"/>
+                <constraint firstItem="iv3-cU-w3x" firstAttribute="top" secondItem="gMf-YI-QGE" secondAttribute="top" constant="65" id="Enh-xC-hZo"/>
+                <constraint firstItem="a8b-MK-8ZB" firstAttribute="centerY" secondItem="gMf-YI-QGE" secondAttribute="centerY" id="Hmp-NZ-sKD"/>
+                <constraint firstItem="jT4-O1-ryD" firstAttribute="top" secondItem="gMf-YI-QGE" secondAttribute="top" constant="162" id="LPv-U3-Qja"/>
+                <constraint firstItem="a8b-MK-8ZB" firstAttribute="centerX" secondItem="Jrd-Et-zcT" secondAttribute="centerX" id="MMD-2b-rrq"/>
+                <constraint firstItem="rLp-D5-7RW" firstAttribute="leading" secondItem="gMf-YI-QGE" secondAttribute="leading" constant="40" id="N23-2B-HSo"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="width" secondItem="eSj-sb-h9N" secondAttribute="width" id="OAr-zf-Zo9"/>
+                <constraint firstItem="jT4-O1-ryD" firstAttribute="width" secondItem="Jrd-Et-zcT" secondAttribute="width" id="OL3-9b-YxP"/>
+                <constraint firstItem="jT4-O1-ryD" firstAttribute="width" secondItem="1ex-Iy-5Wp" secondAttribute="width" id="P3I-IY-Q67"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="centerX" secondItem="1ex-Iy-5Wp" secondAttribute="centerX" id="Q4K-ge-7JO"/>
+                <constraint firstAttribute="trailing" secondItem="iv3-cU-w3x" secondAttribute="trailing" constant="40" id="Scw-69-J7a"/>
+                <constraint firstItem="jT4-O1-ryD" firstAttribute="leading" secondItem="gMf-YI-QGE" secondAttribute="leading" constant="40" id="W9B-my-0wO"/>
+                <constraint firstItem="a8b-MK-8ZB" firstAttribute="top" secondItem="gMf-YI-QGE" secondAttribute="top" constant="-32" id="WEl-av-Hog"/>
+                <constraint firstItem="Jrd-Et-zcT" firstAttribute="top" secondItem="1ex-Iy-5Wp" secondAttribute="bottom" constant="59" id="YiQ-Z3-vBY"/>
+                <constraint firstItem="eSj-sb-h9N" firstAttribute="height" secondItem="ki3-Ak-N1N" secondAttribute="height" id="bI4-fq-4Bs"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="top" secondItem="Jrd-Et-zcT" secondAttribute="bottom" constant="8" id="bcz-Jr-2SL"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="centerX" secondItem="eSj-sb-h9N" secondAttribute="centerX" id="hDF-Kc-Wpn"/>
+                <constraint firstItem="rLp-D5-7RW" firstAttribute="top" secondItem="gMf-YI-QGE" secondAttribute="top" constant="50" id="lbw-qg-cna"/>
+                <constraint firstAttribute="trailing" secondItem="jT4-O1-ryD" secondAttribute="trailing" constant="40" id="lpM-UI-XgB"/>
+                <constraint firstItem="3pl-D4-fel" firstAttribute="top" secondItem="eSj-sb-h9N" secondAttribute="bottom" constant="20" id="ogm-sd-jhY"/>
+                <constraint firstItem="ki3-Ak-N1N" firstAttribute="centerX" secondItem="jT4-O1-ryD" secondAttribute="centerX" id="uLa-gx-Ozn"/>
+                <constraint firstItem="a8b-MK-8ZB" firstAttribute="leading" secondItem="gMf-YI-QGE" secondAttribute="leading" id="uUf-qB-XcS"/>
+                <constraint firstItem="eSj-sb-h9N" firstAttribute="top" secondItem="ki3-Ak-N1N" secondAttribute="bottom" constant="20" id="zkn-Ce-cGM"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="226" y="356"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barre_progression3.png" width="121" height="7"/>
+        <image name="bouton_Enregistrer.png" width="119" height="36"/>
+        <image name="bouton_continuer.png" width="108" height="36"/>
+        <image name="combobox.png" width="273" height="38"/>
+        <image name="fond_popup2.png" width="574" height="536"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

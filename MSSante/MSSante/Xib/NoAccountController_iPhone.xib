@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoAccountController">
+            <connections>
+                <outlet property="labelActivation" destination="XeP-Gl-z1T" id="msL-yh-9c2"/>
+                <outlet property="labelEquipe" destination="loA-qr-7G7" id="2ac-x7-tUD"/>
+                <outlet property="labelProfessionnel" destination="tiT-WW-Cg1" id="d5y-MM-QbY"/>
+                <outlet property="labelRdv" destination="jjN-rz-RCT" id="ezR-qN-ZvZ"/>
+                <outlet property="labelTitulaire" destination="Iv0-rm-ciU" id="4BR-eS-fL3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5LI-8N-IyS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="XeP-Gl-z1T">
+                    <rect key="frame" x="22" y="166" width="276" height="40"/>
+                    <attributedString key="attributedText">
+                        <fragment content="L'activation d'un compte MSSanté nécessite d'être :">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="tiT-WW-Cg1">
+                    <rect key="frame" x="22" y="214" width="276" height="23"/>
+                    <attributedString key="attributedText">
+                        <fragment content="- un professionnel de santé,">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.50196078431372548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="20" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="Iv0-rm-ciU">
+                    <rect key="frame" x="22" y="245" width="276" height="23"/>
+                    <attributedString key="attributedText">
+                        <fragment content="- titulaire d'une CPS,">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.50196078431372548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="20" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="loA-qr-7G7">
+                    <rect key="frame" x="22" y="276" width="276" height="23"/>
+                    <attributedString key="attributedText">
+                        <fragment content="- équipé d'un lecteur de carte.">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.50196078431372548" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="20" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="jjN-rz-RCT">
+                    <rect key="frame" x="22" y="79" width="276" height="79"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Rendez-vous sur le site mssante.fr pour activer votre compte de messagerie sécurisée MSSanté depuis votre poste de travail.">
+                            <attributes>
+                                <font key="NSFont" size="17" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="loA-qr-7G7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="2g9-YN-Sfr"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="width" secondItem="XeP-Gl-z1T" secondAttribute="width" id="GaA-E4-uJ3"/>
+                <constraint firstItem="jjN-rz-RCT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="Gir-1N-3E9"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="width" secondItem="loA-qr-7G7" secondAttribute="width" id="Ikk-zX-cWN"/>
+                <constraint firstItem="jjN-rz-RCT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="K6X-7V-tSf"/>
+                <constraint firstItem="XeP-Gl-z1T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="Ucs-5u-viF"/>
+                <constraint firstItem="XeP-Gl-z1T" firstAttribute="top" secondItem="jjN-rz-RCT" secondAttribute="bottom" constant="8" id="WU2-v4-v5f"/>
+                <constraint firstItem="tiT-WW-Cg1" firstAttribute="top" secondItem="XeP-Gl-z1T" secondAttribute="bottom" constant="8" id="Xqt-4E-hde"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="top" secondItem="tiT-WW-Cg1" secondAttribute="bottom" constant="8" id="bRy-gM-sOc"/>
+                <constraint firstItem="loA-qr-7G7" firstAttribute="top" secondItem="Iv0-rm-ciU" secondAttribute="bottom" constant="8" id="cme-aY-7kr"/>
+                <constraint firstAttribute="trailing" secondItem="jjN-rz-RCT" secondAttribute="trailing" constant="22" id="dKx-gW-yq0"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="width" secondItem="tiT-WW-Cg1" secondAttribute="width" id="eHd-gS-ay2"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="width" secondItem="jjN-rz-RCT" secondAttribute="width" id="gsC-hx-lQB"/>
+                <constraint firstItem="tiT-WW-Cg1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="nxN-FQ-r8p"/>
+                <constraint firstItem="Iv0-rm-ciU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="sUb-KU-V65"/>
+            </constraints>
+            <point key="canvasLocation" x="-52" y="66"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  MSSante
+
+  Created by Labinnovation on 01/07/13.
+  Copyright (c) 2013 Capgemini. All rights reserved.
+*/
+
+//Generic
+"ERREUR" = "Erreur";
+"OK" = "Ok";
+"ERREUR_WS" = "Service momentanément indisponible";
+
+/*
+ * Erreurs
+ *
+ */
+
+"COMPTE_BLOQUE" = "Compte bloqué";
+"INFO_CONNEXION_INVALID" = "Les informations de connexion sont invalides";
+"ERREUR_QRCODE" = "Le QR Code est invalide";
+"CANAL_BLOQUE" = "Le canal associé à votre mobile est bloqué";
+"ERREUR_WEB_SERVICE" = "Le Web Service n'a pas renvoyé la bonne information";
+"SERVICE_INDISPONIBLE" = "Service momentanément indisponible";
+"ERREUR_NO_MESSAGERIE" = "Authentification impossible : l’utilisateur n’a pas d’adresse de messagerie";
+"ERREUR_QR_CODE_EXPIRE" = "Le QR Code est expiré, veuillez vous enrôler de nouveau";
+"VEUILLEZ_VOUS_ENROLLER_DE_NOUVEAU" = "Veuillez vous enrôler de nouveau";
+"NOT_AUTHORIZE_ENROLLEMENT" = "Vous n’êtes pas autorisé à vous enrôler";
+"ERREUR_404_DL_NEW_APPLI" = "Veuillez télécharger la dernière version de l'application";
+"FORMAT_INVALIDE" = "Format de champ invalide";
+"ADRESSE_MESSAGERIE_INVALIDE" = "Votre adresse de messagerie n’est pas reconnue, veuillez vous réenrôler";
+"CONNEXION_IMPOSSIBLE" = "Connexion impossible";
+"CONNEXION_IMPOSSIBLE_ATTACHMENT" = "Aucune connexion : fichier indisponible";
+"OLD_MDP_INVALID" = "Ancien mot de passe est invalide";
+"NEW_MDP_INVALID" = "Nouveau mot de passe invalide";
+"MDP_INVALIDE" = "Mot de passe invalide";
+"OBJET_MESSAGE_SUPERIEUR_50" = "L’objet ne doit pas dépasser 50 caractères";
+"DOSSIER_N_EXISTE_PAS" = "Ce dossier n'existe plus";
+"ERREUR_PUSH" = "Les notifications sont désactivées, vous ne pourrez plus vous connecter au serveur. Vous pouvez aller dans Réglages/Notifications pour réactiver celles-ci";
+"MESSAGE_TROP_VOLUMINEUX" = "Le contenu du message est trop volumineux";
+"MESSAGE_DETAIL_TROP_VOLUMINEUX" = "\n\nMessage trop volumineux, veuillez vous connecter au portail Web pour le visualiser entièrement";
+"MESSAGE_ATTACHMENTS_TROP_VOLUMINEUX" = "Le message est trop volumineux (supérieur à 10Mo)";
+"RENSEIGNER_UN_DESTINATAIRE" = "Veuillez renseigner un destinataire";
+"MESSAGE_CONFIRMATION_PAS_DE_CORPS_NI_OBJET" = "Etes vous sûr de vouloir envoyer le message sans objet ni contenu ?";
+"FORMAT_DESTINATAIRES_INVALIDE" = "Le format des destinataires est invalide";
+"THREE_CHARS_MIN" = "Veuillez renseigner au moins 3 caractères";
+"DOSSIER_SUPPRIME" ="Ce dossier a été supprimé";
+"AUTHENTIFICATION_IMPOSSIBLE" = "Authentification impossible, veuillez réessayer";
+
+"MESSAGE_TROP_VOLUMINEUX_PB_MEMOIRE" = "Le contenu est trop volumineux, vous n’avez pas assez d’espace mémoire sur votre mobile";
+
+"MEMOIRE_INSUFFISANTE_SUR_VOTRE_MOBILE" = "Mémoire insuffisante sur votre mobile!";
+
+// non utilisés
+"TELECHARGER_LA_DERNIRE_VERSION" = "Veuillez télécharger la dernière version de l’application";
+"INITIALISATION_IMPOSSIBLE" = "Initialisation impossible";
+
+"ERREUR_VEUILLEZ_VOUS_RECONNECTER" = "Erreur : veuillez vous reconnecter";
+"LE_MESSAGE_A_ETE_SUPPRIME" = "Le message a été supprimé";
+"LE_FICHER_EST_INACCESSIBLE" = "Le fichier est inaccessible";
+"OTP_INVALID" = "Le code de validation est invalide, merci de le revérifier";
+
+// utilisé mais n'existe pas dans la liste d'erreurs
+"FORMAT_DE_FICHIER_NON_SUPPORTE" = "Aucune application disponible pour ouvrir cette pièce jointe";
+"CANAL_PUSH_DOES_NOT_EXIST" = "Le canal push n'existe pas";
+"PROBLEME_BD" = "Problème d'initialisation, Veuillez vous enrôler de nouveau!";
+"MISE_A_JOUR" = "La mise à jour de l’application a fait évoluer les paramètres de sécurité, nous vous remercions d’associer de nouveau votre appareil à votre compte MSSanté";
+
+
+//Alerts
+"MSG_SAVED_TO_OUTBOX" ="Le message a été placé dans la boîte d'envoi et sera envoyé lors du rétablissement de la connexion réseau";
+"MAJ" = "Mise à jour réussie";
+"MDP_MAJ" = "Mot de passe mis à jour";
+"NOTIFICATION_MAJ" = "Etat notification mis à jour";
+
+/*
+ * Strings
+ */
+
+
+"ANNUAIRE" = "Annuaire";
+"RESULTAT" = "Résultat";
+
+"CHARGEMENT_INITIAL" = "Chargement initial ...";
+//Boite
+"RECEPTION" = "Réception";
+"BOITE_DE_RECEPTION" = "Boite de réception";
+"NON_LUS" = "Non lus";
+"MESSAGES_SUIVIS" = "Messages suivis";
+"SUIVIS" = "Suivis";
+"BROUILLONS" = "Brouillons";
+"MESSAGES_ENVOYES" = "Messages envoyés";
+"ENVOYES" = "Envoyés";
+"CORBEILLE" = "Corbeille";
+"DOSSIER" = "Dossier";
+"BOITE_D_ENVOI" = "Boite d'envoi";
+
+//Enrollement
+"AJOUTER_CET_APPAREIL" = "Ajouter cet appareil";
+"ENTREE_NON_IDENTIQUE" = "Les entrées ne sont pas identiques";
+"SCAN_EN_COURS" = "Traitement en cours";
+
+//Dossier
+"DEPLACER_MESSAGE" = "Déplacer un message";
+"DOSSIERS" = "Dossiers";
+
+//PushToRefresh
+"TIRER_POUR_ACTUALISER..." = "Tirer pour actualiser...";
+"RELACHER_POUR_ACTUALISER" = "Relacher pour actualiser";
+"DERNIERE_MAJ" = "Dernière mise à jour";
+"CHARGEMENT..." = "Chargement...";
+
+//Load More Messages Button
+"CHARGER_LES_MESSAGES_SUIVANTS" = "Charger les messages suivants";
+"RECHERCHER_LES_MESSAGES_SUIVANTS" = "Rechercher les messages suivants";
+
+//Nouveau message
+"NOUVEAU_MESSAGE" ="Nouveau message";
+"SANS_OBJET" = "<Sans objet>";
+"RE" = "Re:";
+"TR" = "Tr:";
+"ANNULER" = "Annuler";
+"ENREGISTRER_LE_BROUILLON" = "Enregistrer le brouillon";
+"EFFACER_LE_BROUILLON" = "Effacer le brouillon";
+"AUCUN_DESTINATAIRE" = "Aucun destinataire";
+
+//Dossier
+"AUCUN_DOSSIER" = "Aucun dossier";

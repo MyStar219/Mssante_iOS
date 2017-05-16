@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  MSSante
+
+  Created by Labinnovation on 01/07/13.
+  Copyright (c) 2013 Capgemini. All rights reserved.
+*/
+
+
+//Generic
+"ERREUR" = "Error";
+"OK" = "Ok";
+
+//Boite
+"RECEPTION" = "Reception";
+"BOITE_DE_RECEPTION" = "Inbox";
+"NON_LUS" = "Unread";
+"MESSAGES_SUIVIS" = "Messages followed";
+"BROUILLONS" = "Draft";
+"MESSAGES_ENVOYES" = "Messages sent";
+"CORBEILLE" = "Trash";
+"DOSSIER" = "Folder";
+"BOITE_D_ENVOI" = "Outbox";
+
+//Erreur
+"INFO_CONNEXION_INVALID" = "The credentials are invalid";
+"PAS_DE_CONNEXION" = "You are not connected to the network";
+"MDP_INVALIDE" = "Invalid password";
+
+//Enrollement
+
+"AJOUTER_CET_APPAREIL" = "Add device";
+"ENTREE_NON_IDENTIQUE" = "The inputs are not identical";
+"SCAN_EN_COURS" = "Scan in progress";

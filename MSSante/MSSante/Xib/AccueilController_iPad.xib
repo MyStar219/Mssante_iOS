@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14D131" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccueilController">
+            <connections>
+                <outlet property="boutonAjouter" destination="hF5-0h-jUm" id="n9i-16-W6S"/>
+                <outlet property="boutonPasCompte" destination="sQk-Sc-Tne" id="tkJ-tF-i1E"/>
+                <outlet property="labelAcces" destination="100" id="eMd-4t-ARa"/>
+                <outlet property="labelBienvenue" destination="9" id="Pb9-ol-jCC"/>
+                <outlet property="labelOperation" destination="8qK-cp-tla" id="wSR-Ze-PxH"/>
+                <outlet property="labelPasCompte" destination="TBv-f6-1Ym" id="MOr-c8-a4l"/>
+                <outlet property="logo" destination="386" id="yNK-of-C5l"/>
+                <outlet property="view" destination="1" id="75"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo_app-MSS114px.png" translatesAutoresizingMaskIntoConstraints="NO" id="386">
+                    <rect key="frame" x="40" y="40" width="114" height="114"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="3d6-KB-Pck"/>
+                        <constraint firstAttribute="height" constant="114" id="Hae-Jh-vBK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="40" y="300" width="688" height="60"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Bienvenue sur l'application mobile MSSanté ">
+                            <attributes>
+                                <color key="NSColor" red="0.035294119268655777" green="0.039215687662363052" blue="0.0078431377187371254" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="proposé par l’ASIP Santé et les Ordres professionnels.">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="100">
+                    <rect key="frame" x="40" y="368" width="688" height="90"/>
+                    <attributedString key="attributedText">
+                        <fragment content="L’accès à votre messagerie nécessite d’ajouter cet appareil mobile à la liste des appareils mobiles associés à votre compte.">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="688" translatesAutoresizingMaskIntoConstraints="NO" id="8qK-cp-tla">
+                    <rect key="frame" x="40" y="466" width="688" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Cette opération n’est à effectuer qu’une seule fois.">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="26" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF5-0h-jUm" userLabel="Bouton d'ajout">
+                    <rect key="frame" x="72" y="543" width="625" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="QFC-Bi-lYX"/>
+                        <constraint firstAttribute="width" constant="625" id="Uue-Wi-6lX"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="bouton_AjouterCet_Ipad.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="EnrolerCeTerminal:" destination="-1" eventType="touchUpInside" id="ACN-nF-uVF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous ne disposez pas de compte MSSanté ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="344" translatesAutoresizingMaskIntoConstraints="NO" id="TBv-f6-1Ym">
+                    <rect key="frame" x="212" y="989" width="344" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" name="selectedMenuItemColor" catalog="System" colorSpace="catalog"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQk-Sc-Tne" userLabel="Bouton &quot;Vous ne disposez pas ...&quot;">
+                    <rect key="frame" x="184" y="967" width="401" height="57"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="5hv-kD-y6p"/>
+                        <constraint firstAttribute="width" constant="401" id="EXj-uf-3vi"/>
+                    </constraints>
+                    <connections>
+                        <action selector="pasDeCompte:" destination="-1" eventType="touchUpInside" id="eEV-xq-44C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+            <constraints>
+                <constraint firstItem="386" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="40" id="3hQ-JB-nWU"/>
+                <constraint firstItem="TBv-f6-1Ym" firstAttribute="centerX" secondItem="hF5-0h-jUm" secondAttribute="centerX" id="5if-2A-rCg"/>
+                <constraint firstItem="TBv-f6-1Ym" firstAttribute="centerX" secondItem="sQk-Sc-Tne" secondAttribute="centerX" id="CIn-Qa-xSS"/>
+                <constraint firstItem="100" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="8" id="GDf-4N-uti"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TBv-f6-1Ym" secondAttribute="bottom" constant="14" id="H3h-cG-I99"/>
+                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="40" id="JhQ-PF-PMZ"/>
+                <constraint firstItem="386" firstAttribute="top" secondItem="1" secondAttribute="top" constant="40" id="NgY-Ig-EM5"/>
+                <constraint firstItem="TBv-f6-1Ym" firstAttribute="centerX" secondItem="8qK-cp-tla" secondAttribute="centerX" id="cNf-7J-1Y7"/>
+                <constraint firstItem="9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="300" id="dbd-Yl-Tad"/>
+                <constraint firstItem="hF5-0h-jUm" firstAttribute="top" secondItem="8qK-cp-tla" secondAttribute="bottom" constant="47" id="ib3-An-mUs"/>
+                <constraint firstItem="TBv-f6-1Ym" firstAttribute="centerX" secondItem="9" secondAttribute="centerX" id="il1-Sy-s6f"/>
+                <constraint firstItem="TBv-f6-1Ym" firstAttribute="centerX" secondItem="100" secondAttribute="centerX" id="kBa-Tm-H7k"/>
+                <constraint firstAttribute="bottom" secondItem="sQk-Sc-Tne" secondAttribute="bottom" id="mBB-ma-bBX"/>
+                <constraint firstItem="8qK-cp-tla" firstAttribute="width" secondItem="100" secondAttribute="width" id="qnY-7Z-mG5"/>
+                <constraint firstAttribute="trailing" secondItem="9" secondAttribute="trailing" constant="40" id="qqH-TF-XrA"/>
+                <constraint firstItem="8qK-cp-tla" firstAttribute="width" secondItem="9" secondAttribute="width" id="sOS-EN-DDN"/>
+                <constraint firstItem="8qK-cp-tla" firstAttribute="top" secondItem="100" secondAttribute="bottom" constant="8" id="ueO-kx-RHr"/>
+                <constraint firstAttribute="bottom" secondItem="TBv-f6-1Ym" secondAttribute="bottom" constant="14" id="w51-RI-VMw"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <point key="canvasLocation" x="357" y="302"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo_app-MSS114px.png" width="114" height="114"/>
+        <image name="bouton_AjouterCet_Ipad.png" width="286" height="37"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

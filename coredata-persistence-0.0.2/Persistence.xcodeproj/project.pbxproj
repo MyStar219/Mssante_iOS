@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7F419B151B0E07E700814DC5 /* UniversalPersistenceLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7F419B161B0E07E700814DC5 /* Build configuration list for PBXAggregateTarget "UniversalPersistenceLib" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = UniversalPersistenceLib;
+			productName = UniversalPersistenceLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7F067E1F17DDFDD4001055B4 /* EncryptedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F067E1D17DDFDD4001055B4 /* EncryptedStore.h */; };
+		7F067E2017DDFDD4001055B4 /* EncryptedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F067E1E17DDFDD4001055B4 /* EncryptedStore.m */; };
+		7F067E2117DDFDD4001055B4 /* EncryptedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F067E1E17DDFDD4001055B4 /* EncryptedStore.m */; };
+		7F64DB0D17AFCE8600A0446D /* CDContainsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64DB0C17AFCE8600A0446D /* CDContainsFilter.m */; };
+		7F64DB1117AFD1E800A0446D /* CDContainsFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F64DB0B17AFCE4500A0446D /* CDContainsFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA747D9F0F9514B9006C5449 /* Persistence_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Persistence_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		C90F710C112856A6009EE258 /* CDFilterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C97B15DC11285062002AD48D /* CDFilterFactory.m */; };
+		C90F711E11285716009EE258 /* CDFilterFactoryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C97B15C511284F9B002AD48D /* CDFilterFactoryTestCase.m */; };
+		C90F713C112858CE009EE258 /* GHUnitIPhoneTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C90F7135112858CE009EE258 /* GHUnitIPhoneTestMain.m */; };
+		C90F713D112858CE009EE258 /* libGHUnitIPhone3_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90F7137112858CE009EE258 /* libGHUnitIPhone3_0.a */; };
+		C90F713E112858CE009EE258 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = C90F7138112858CE009EE258 /* Makefile */; };
+		C90F713F112858CE009EE258 /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = C90F713B112858CE009EE258 /* RunTests.sh */; };
+		C9113D74109CCB5E00F0134B /* CDProjectionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9113D73109CCB5E00F0134B /* CDProjectionTestCase.m */; };
+		C9113DFB109CD59500F0134B /* CDFunctionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9113DFA109CD59500F0134B /* CDFunctionTestCase.m */; };
+		C9284DD31081D92C008567C6 /* CDNullFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9284DD21081D92C008567C6 /* CDNullFilter.m */; };
+		C9284DD41081D92C008567C6 /* CDNullFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C9284DD11081D92C008567C6 /* CDNullFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9284DD51081D92C008567C6 /* CDNullFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9284DD21081D92C008567C6 /* CDNullFilter.m */; };
+		C92F1F801038A597006B0A86 /* CDCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F671038A597006B0A86 /* CDCriteria.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F811038A597006B0A86 /* CDCriteriaElement.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F681038A597006B0A86 /* CDCriteriaElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F821038A597006B0A86 /* CDCriteriaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F691038A597006B0A86 /* CDCriteriaElement.m */; };
+		C92F1F831038A597006B0A86 /* CDEqualFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F6A1038A597006B0A86 /* CDEqualFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F841038A597006B0A86 /* CDEqualFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6B1038A597006B0A86 /* CDEqualFilter.m */; };
+		C92F1F851038A597006B0A86 /* CDFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F6C1038A597006B0A86 /* CDFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F861038A597006B0A86 /* CDFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6D1038A597006B0A86 /* CDFilter.m */; };
+		C92F1F871038A597006B0A86 /* CDFilterConjunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F6E1038A597006B0A86 /* CDFilterConjunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F881038A597006B0A86 /* CDFilterConjunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6F1038A597006B0A86 /* CDFilterConjunction.m */; };
+		C92F1F891038A597006B0A86 /* CDFilterDisjunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F701038A597006B0A86 /* CDFilterDisjunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F8A1038A597006B0A86 /* CDFilterDisjunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F711038A597006B0A86 /* CDFilterDisjunction.m */; };
+		C92F1F8B1038A597006B0A86 /* CDFilterJunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F721038A597006B0A86 /* CDFilterJunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F8C1038A597006B0A86 /* CDFilterJunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F731038A597006B0A86 /* CDFilterJunction.m */; };
+		C92F1F8F1038A597006B0A86 /* CDLikeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F761038A597006B0A86 /* CDLikeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F901038A597006B0A86 /* CDLikeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F771038A597006B0A86 /* CDLikeFilter.m */; };
+		C92F1F911038A597006B0A86 /* CDOperatorFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F781038A597006B0A86 /* CDOperatorFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F921038A597006B0A86 /* CDOperatorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F791038A597006B0A86 /* CDOperatorFilter.m */; };
+		C92F1F931038A597006B0A86 /* CDOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F7A1038A597006B0A86 /* CDOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F941038A597006B0A86 /* CDOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7B1038A597006B0A86 /* CDOrder.m */; };
+		C92F1F951038A597006B0A86 /* CDProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F7C1038A597006B0A86 /* CDProjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F961038A597006B0A86 /* CDProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7D1038A597006B0A86 /* CDProjection.m */; };
+		C92F1F971038A597006B0A86 /* CDSearchCriteria.h in Headers */ = {isa = PBXBuildFile; fileRef = C92F1F7E1038A597006B0A86 /* CDSearchCriteria.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C92F1F981038A597006B0A86 /* CDSearchCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7F1038A597006B0A86 /* CDSearchCriteria.m */; };
+		C92F1FFE1038A6F8006B0A86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F1FFD1038A6F8006B0A86 /* UIKit.framework */; };
+		C92F20041038A71E006B0A86 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F20031038A71E006B0A86 /* CoreFoundation.framework */; };
+		C92F20081038A72F006B0A86 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F20071038A72F006B0A86 /* AddressBook.framework */; };
+		C92F20131038A7B5006B0A86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F20121038A7B5006B0A86 /* CoreGraphics.framework */; };
+		C92F20171038A7C2006B0A86 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F20161038A7C2006B0A86 /* AddressBookUI.framework */; };
+		C92F20191038A7F3006B0A86 /* CDCriteriaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F691038A597006B0A86 /* CDCriteriaElement.m */; };
+		C92F201A1038A7F3006B0A86 /* CDEqualFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6B1038A597006B0A86 /* CDEqualFilter.m */; };
+		C92F201B1038A7F3006B0A86 /* CDFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6D1038A597006B0A86 /* CDFilter.m */; };
+		C92F201C1038A7F3006B0A86 /* CDFilterConjunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F6F1038A597006B0A86 /* CDFilterConjunction.m */; };
+		C92F201D1038A7F3006B0A86 /* CDFilterDisjunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F711038A597006B0A86 /* CDFilterDisjunction.m */; };
+		C92F201E1038A7F3006B0A86 /* CDFilterJunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F731038A597006B0A86 /* CDFilterJunction.m */; };
+		C92F20211038A7F3006B0A86 /* CDLikeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F771038A597006B0A86 /* CDLikeFilter.m */; };
+		C92F20221038A7F3006B0A86 /* CDOperatorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F791038A597006B0A86 /* CDOperatorFilter.m */; };
+		C92F20231038A7F3006B0A86 /* CDOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7B1038A597006B0A86 /* CDOrder.m */; };
+		C92F20241038A7F3006B0A86 /* CDProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7D1038A597006B0A86 /* CDProjection.m */; };
+		C92F20251038A7F3006B0A86 /* CDSearchCriteria.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F1F7F1038A597006B0A86 /* CDSearchCriteria.m */; };
+		C92F202C1038A8B3006B0A86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F202B1038A8B3006B0A86 /* CoreData.framework */; };
+		C92F21401038AC30006B0A86 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F213F1038AC30006B0A86 /* CoreLocation.framework */; };
+		C92F21571038B495006B0A86 /* CDFilterJunctionTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F21541038B495006B0A86 /* CDFilterJunctionTestCase.m */; };
+		C92F21581038B495006B0A86 /* CDFilterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F21551038B495006B0A86 /* CDFilterTestCase.m */; };
+		C92F21591038B495006B0A86 /* CDSearchCriteriaTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F21561038B495006B0A86 /* CDSearchCriteriaTestCase.m */; };
+		C92F21681038B57E006B0A86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F202B1038A8B3006B0A86 /* CoreData.framework */; };
+		C97B15DB11285052002AD48D /* CDFilterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C97B15DA11285052002AD48D /* CDFilterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C97B15DE11285062002AD48D /* CDFilterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C97B15DC11285062002AD48D /* CDFilterFactory.m */; };
+		C9860011108A13D200900C3E /* Test.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C9860010108A13D200900C3E /* Test.xcdatamodel */; };
+		C98BBE3E1039EB7300E63F84 /* common_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = C98BBE3D1039EB7300E63F84 /* common_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98BBFD71039F5B200E63F84 /* DAO.h in Headers */ = {isa = PBXBuildFile; fileRef = C98BBFCD1039F5B200E63F84 /* DAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98BBFEC1039F61A00E63F84 /* DAOBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFE71039F61A00E63F84 /* DAOBase.m */; };
+		C98BBFED1039F61A00E63F84 /* DAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFE91039F61A00E63F84 /* DAOFactory.m */; };
+		C98BBFEE1039F61A00E63F84 /* RuntimeDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFEB1039F61A00E63F84 /* RuntimeDAO.m */; };
+		C98BBFF01039F61A00E63F84 /* DAOBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C98BBFE61039F61A00E63F84 /* DAOBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98BBFF11039F61A00E63F84 /* DAOBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFE71039F61A00E63F84 /* DAOBase.m */; };
+		C98BBFF21039F61A00E63F84 /* DAOFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C98BBFE81039F61A00E63F84 /* DAOFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98BBFF31039F61A00E63F84 /* DAOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFE91039F61A00E63F84 /* DAOFactory.m */; };
+		C98BBFF41039F61A00E63F84 /* RuntimeDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = C98BBFEA1039F61A00E63F84 /* RuntimeDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98BBFF51039F61A00E63F84 /* RuntimeDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BBFEB1039F61A00E63F84 /* RuntimeDAO.m */; };
+		C98BC0A31039F94200E63F84 /* DAOFactoryTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98BC0A21039F94200E63F84 /* DAOFactoryTestCase.m */; };
+		C98BC0AF1039F9C300E63F84 /* test.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C98BC0AE1039F9C300E63F84 /* test.sqlite */; };
+		C98ED8A11081D451006EAFEC /* CDNullFilterTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C98ED8A01081D451006EAFEC /* CDNullFilterTestCase.m */; };
+		C9AD9574109CC0B6000B71DA /* CDFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AD9573109CC0B6000B71DA /* CDFunction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9AD9576109CC0C2000B71DA /* CDFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AD9575109CC0C2000B71DA /* CDFunction.m */; };
+		C9AD9577109CC0C2000B71DA /* CDFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AD9575109CC0C2000B71DA /* CDFunction.m */; };
+		C9B026581039DA35007A11D0 /* Persistence.h in Headers */ = {isa = PBXBuildFile; fileRef = C9B0264F1039DA25007A11D0 /* Persistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9CCCCA11087A39000350FDD /* CDOrderTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CCCCA01087A39000350FDD /* CDOrderTestCase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F1B0FE91992712600E228B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1B0FE41992712600E228B1 /* sqlcipher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		7F1B0FEB1992713700E228B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1B0FE41992712600E228B1 /* sqlcipher.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = sqlcipher;
+		};
+		C92F1FFB1038A6DF006B0A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Persistence;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F067E1D17DDFDD4001055B4 /* EncryptedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptedStore.h; sourceTree = "<group>"; };
+		7F067E1E17DDFDD4001055B4 /* EncryptedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptedStore.m; sourceTree = "<group>"; };
+		7F1B0FE41992712600E228B1 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = vendor/sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
+		7F64DB0B17AFCE4500A0446D /* CDContainsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDContainsFilter.h; path = Classes/CDContainsFilter.h; sourceTree = "<group>"; };
+		7F64DB0C17AFCE8600A0446D /* CDContainsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDContainsFilter.m; path = Classes/CDContainsFilter.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Persistence_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persistence_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C90F712B112858CE009EE258 /* GHAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAsyncTestCase.h; sourceTree = "<group>"; };
+		C90F712C112858CE009EE258 /* GHTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTest.h; sourceTree = "<group>"; };
+		C90F712D112858CE009EE258 /* GHTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTestCase.h; sourceTree = "<group>"; };
+		C90F712E112858CE009EE258 /* GHTestGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTestGroup.h; sourceTree = "<group>"; };
+		C90F712F112858CE009EE258 /* GHTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTesting.h; sourceTree = "<group>"; };
+		C90F7130112858CE009EE258 /* GHTestMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTestMacros.h; sourceTree = "<group>"; };
+		C90F7131112858CE009EE258 /* GHTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTestRunner.h; sourceTree = "<group>"; };
+		C90F7132112858CE009EE258 /* GHTestSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTestSuite.h; sourceTree = "<group>"; };
+		C90F7133112858CE009EE258 /* GHUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUnit.h; sourceTree = "<group>"; };
+		C90F7134112858CE009EE258 /* GHUnitIPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHUnitIPhoneAppDelegate.h; sourceTree = "<group>"; };
+		C90F7135112858CE009EE258 /* GHUnitIPhoneTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHUnitIPhoneTestMain.m; sourceTree = "<group>"; };
+		C90F7136112858CE009EE258 /* GHUNSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHUNSObject+Swizzle.h"; sourceTree = "<group>"; };
+		C90F7137112858CE009EE258 /* libGHUnitIPhone3_0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGHUnitIPhone3_0.a; path = "Libraries/libGHUnitIPhone3_0-0.4.18/libGHUnitIPhone3_0.a"; sourceTree = "<group>"; };
+		C90F7138112858CE009EE258 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		C90F7139112858CE009EE258 /* NSException+GHTestFailureExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+GHTestFailureExceptions.h"; sourceTree = "<group>"; };
+		C90F713A112858CE009EE258 /* NSValue+GHValueFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+GHValueFormatter.h"; sourceTree = "<group>"; };
+		C90F713B112858CE009EE258 /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
+		C9113D73109CCB5E00F0134B /* CDProjectionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDProjectionTestCase.m; sourceTree = "<group>"; };
+		C9113DFA109CD59500F0134B /* CDFunctionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFunctionTestCase.m; sourceTree = "<group>"; };
+		C9284DD11081D92C008567C6 /* CDNullFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDNullFilter.h; path = Classes/CDNullFilter.h; sourceTree = "<group>"; };
+		C9284DD21081D92C008567C6 /* CDNullFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDNullFilter.m; path = Classes/CDNullFilter.m; sourceTree = "<group>"; };
+		C92F1F671038A597006B0A86 /* CDCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDCriteria.h; path = Classes/CDCriteria.h; sourceTree = "<group>"; };
+		C92F1F681038A597006B0A86 /* CDCriteriaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDCriteriaElement.h; path = Classes/CDCriteriaElement.h; sourceTree = "<group>"; };
+		C92F1F691038A597006B0A86 /* CDCriteriaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDCriteriaElement.m; path = Classes/CDCriteriaElement.m; sourceTree = "<group>"; };
+		C92F1F6A1038A597006B0A86 /* CDEqualFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEqualFilter.h; path = Classes/CDEqualFilter.h; sourceTree = "<group>"; };
+		C92F1F6B1038A597006B0A86 /* CDEqualFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEqualFilter.m; path = Classes/CDEqualFilter.m; sourceTree = "<group>"; };
+		C92F1F6C1038A597006B0A86 /* CDFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFilter.h; path = Classes/CDFilter.h; sourceTree = "<group>"; };
+		C92F1F6D1038A597006B0A86 /* CDFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFilter.m; path = Classes/CDFilter.m; sourceTree = "<group>"; };
+		C92F1F6E1038A597006B0A86 /* CDFilterConjunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFilterConjunction.h; path = Classes/CDFilterConjunction.h; sourceTree = "<group>"; };
+		C92F1F6F1038A597006B0A86 /* CDFilterConjunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFilterConjunction.m; path = Classes/CDFilterConjunction.m; sourceTree = "<group>"; };
+		C92F1F701038A597006B0A86 /* CDFilterDisjunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFilterDisjunction.h; path = Classes/CDFilterDisjunction.h; sourceTree = "<group>"; };
+		C92F1F711038A597006B0A86 /* CDFilterDisjunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFilterDisjunction.m; path = Classes/CDFilterDisjunction.m; sourceTree = "<group>"; };
+		C92F1F721038A597006B0A86 /* CDFilterJunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFilterJunction.h; path = Classes/CDFilterJunction.h; sourceTree = "<group>"; };
+		C92F1F731038A597006B0A86 /* CDFilterJunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFilterJunction.m; path = Classes/CDFilterJunction.m; sourceTree = "<group>"; };
+		C92F1F761038A597006B0A86 /* CDLikeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDLikeFilter.h; path = Classes/CDLikeFilter.h; sourceTree = "<group>"; };
+		C92F1F771038A597006B0A86 /* CDLikeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDLikeFilter.m; path = Classes/CDLikeFilter.m; sourceTree = "<group>"; };
+		C92F1F781038A597006B0A86 /* CDOperatorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDOperatorFilter.h; path = Classes/CDOperatorFilter.h; sourceTree = "<group>"; };
+		C92F1F791038A597006B0A86 /* CDOperatorFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDOperatorFilter.m; path = Classes/CDOperatorFilter.m; sourceTree = "<group>"; };
+		C92F1F7A1038A597006B0A86 /* CDOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDOrder.h; path = Classes/CDOrder.h; sourceTree = "<group>"; };
+		C92F1F7B1038A597006B0A86 /* CDOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDOrder.m; path = Classes/CDOrder.m; sourceTree = "<group>"; };
+		C92F1F7C1038A597006B0A86 /* CDProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDProjection.h; path = Classes/CDProjection.h; sourceTree = "<group>"; };
+		C92F1F7D1038A597006B0A86 /* CDProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDProjection.m; path = Classes/CDProjection.m; sourceTree = "<group>"; };
+		C92F1F7E1038A597006B0A86 /* CDSearchCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDSearchCriteria.h; path = Classes/CDSearchCriteria.h; sourceTree = "<group>"; };
+		C92F1F7F1038A597006B0A86 /* CDSearchCriteria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDSearchCriteria.m; path = Classes/CDSearchCriteria.m; sourceTree = "<group>"; };
+		C92F1FE51038A675006B0A86 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92F1FE71038A675006B0A86 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		C92F1FFD1038A6F8006B0A86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C92F20031038A71E006B0A86 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C92F20071038A72F006B0A86 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C92F20121038A7B5006B0A86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C92F20141038A7BB006B0A86 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C92F20161038A7C2006B0A86 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		C92F202B1038A8B3006B0A86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C92F213F1038AC30006B0A86 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C92F21541038B495006B0A86 /* CDFilterJunctionTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterJunctionTestCase.m; sourceTree = "<group>"; };
+		C92F21551038B495006B0A86 /* CDFilterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterTestCase.m; sourceTree = "<group>"; };
+		C92F21561038B495006B0A86 /* CDSearchCriteriaTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSearchCriteriaTestCase.m; sourceTree = "<group>"; };
+		C97B15C511284F9B002AD48D /* CDFilterFactoryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterFactoryTestCase.m; sourceTree = "<group>"; };
+		C97B15DA11285052002AD48D /* CDFilterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFilterFactory.h; path = Classes/CDFilterFactory.h; sourceTree = "<group>"; };
+		C97B15DC11285062002AD48D /* CDFilterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFilterFactory.m; path = Classes/CDFilterFactory.m; sourceTree = "<group>"; };
+		C9860010108A13D200900C3E /* Test.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		C98BBE3D1039EB7300E63F84 /* common_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_defines.h; sourceTree = "<group>"; };
+		C98BBFCD1039F5B200E63F84 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAO.h; path = Classes/Dao/DAO.h; sourceTree = "<group>"; };
+		C98BBFE51039F61A00E63F84 /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
+		C98BBFE61039F61A00E63F84 /* DAOBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAOBase.h; sourceTree = "<group>"; };
+		C98BBFE71039F61A00E63F84 /* DAOBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAOBase.m; sourceTree = "<group>"; };
+		C98BBFE81039F61A00E63F84 /* DAOFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAOFactory.h; sourceTree = "<group>"; };
+		C98BBFE91039F61A00E63F84 /* DAOFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAOFactory.m; sourceTree = "<group>"; };
+		C98BBFEA1039F61A00E63F84 /* RuntimeDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDAO.h; sourceTree = "<group>"; };
+		C98BBFEB1039F61A00E63F84 /* RuntimeDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeDAO.m; sourceTree = "<group>"; };
+		C98BC0A21039F94200E63F84 /* DAOFactoryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAOFactoryTestCase.m; sourceTree = "<group>"; };
+		C98BC0AE1039F9C300E63F84 /* test.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.sqlite; sourceTree = SOURCE_ROOT; };
+		C98ED8A01081D451006EAFEC /* CDNullFilterTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNullFilterTestCase.m; sourceTree = "<group>"; };
+		C9AD9573109CC0B6000B71DA /* CDFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDFunction.h; path = Classes/CDFunction.h; sourceTree = "<group>"; };
+		C9AD9575109CC0C2000B71DA /* CDFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDFunction.m; path = Classes/CDFunction.m; sourceTree = "<group>"; };
+		C9B0264F1039DA25007A11D0 /* Persistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Persistence.h; path = Classes/Persistence.h; sourceTree = "<group>"; };
+		C9CCCCA01087A39000350FDD /* CDOrderTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderTestCase.m; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libPersistence.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPersistence.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92F1FE31038A675006B0A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92F202C1038A8B3006B0A86 /* CoreData.framework in Frameworks */,
+				C92F1FFE1038A6F8006B0A86 /* UIKit.framework in Frameworks */,
+				C92F20041038A71E006B0A86 /* CoreFoundation.framework in Frameworks */,
+				C92F20081038A72F006B0A86 /* AddressBook.framework in Frameworks */,
+				C92F20131038A7B5006B0A86 /* CoreGraphics.framework in Frameworks */,
+				C92F20171038A7C2006B0A86 /* AddressBookUI.framework in Frameworks */,
+				C92F21401038AC30006B0A86 /* CoreLocation.framework in Frameworks */,
+				C90F713D112858CE009EE258 /* libGHUnitIPhone3_0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				C92F21681038B57E006B0A86 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libPersistence.a */,
+				C92F1FE51038A675006B0A86 /* Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B0FE41992712600E228B1 /* sqlcipher.xcodeproj */,
+				7F067E1C17DDFDD4001055B4 /* Incremental Store */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				C92F21531038B495006B0A86 /* Tests */,
+				C92F1FDE1038A62D006B0A86 /* Libraries */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				C92F1FE71038A675006B0A86 /* Tests-Info.plist */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90F7137112858CE009EE258 /* libGHUnitIPhone3_0.a */,
+				C92F1FFD1038A6F8006B0A86 /* UIKit.framework */,
+				C92F20031038A71E006B0A86 /* CoreFoundation.framework */,
+				C92F20071038A72F006B0A86 /* AddressBook.framework */,
+				C92F20121038A7B5006B0A86 /* CoreGraphics.framework */,
+				C92F20141038A7BB006B0A86 /* AddressBook.framework */,
+				C92F20161038A7C2006B0A86 /* AddressBookUI.framework */,
+				C92F202B1038A8B3006B0A86 /* CoreData.framework */,
+				C92F213F1038AC30006B0A86 /* CoreLocation.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9B0264E1039DA02007A11D0 /* Includes */,
+				C98BBFE41039F61A00E63F84 /* Dao */,
+				C92F1F691038A597006B0A86 /* CDCriteriaElement.m */,
+				C92F1F7B1038A597006B0A86 /* CDOrder.m */,
+				C92F1F6B1038A597006B0A86 /* CDEqualFilter.m */,
+				C92F1F6D1038A597006B0A86 /* CDFilter.m */,
+				C97B15DC11285062002AD48D /* CDFilterFactory.m */,
+				C92F1F6F1038A597006B0A86 /* CDFilterConjunction.m */,
+				C92F1F711038A597006B0A86 /* CDFilterDisjunction.m */,
+				C92F1F731038A597006B0A86 /* CDFilterJunction.m */,
+				C9AD9575109CC0C2000B71DA /* CDFunction.m */,
+				C92F1F771038A597006B0A86 /* CDLikeFilter.m */,
+				7F64DB0C17AFCE8600A0446D /* CDContainsFilter.m */,
+				C9284DD21081D92C008567C6 /* CDNullFilter.m */,
+				C92F1F791038A597006B0A86 /* CDOperatorFilter.m */,
+				C92F1F7D1038A597006B0A86 /* CDProjection.m */,
+				C92F1F7F1038A597006B0A86 /* CDSearchCriteria.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C98BBE3D1039EB7300E63F84 /* common_defines.h */,
+				AA747D9E0F9514B9006C5449 /* Persistence_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		7F067E1C17DDFDD4001055B4 /* Incremental Store */ = {
+			isa = PBXGroup;
+			children = (
+				7F067E1E17DDFDD4001055B4 /* EncryptedStore.m */,
+				7F067E1D17DDFDD4001055B4 /* EncryptedStore.h */,
+				C99A00EE108655B40037B60E /* Resources */,
+			);
+			path = "Incremental Store";
+			sourceTree = "<group>";
+		};
+		7F1B0FE51992712600E228B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B0FEA1992712600E228B1 /* libsqlcipher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90F712A112858CE009EE258 /* libGHUnitIPhone3_0-0.4.18 */ = {
+			isa = PBXGroup;
+			children = (
+				C90F712B112858CE009EE258 /* GHAsyncTestCase.h */,
+				C90F712C112858CE009EE258 /* GHTest.h */,
+				C90F712D112858CE009EE258 /* GHTestCase.h */,
+				C90F712E112858CE009EE258 /* GHTestGroup.h */,
+				C90F712F112858CE009EE258 /* GHTesting.h */,
+				C90F7130112858CE009EE258 /* GHTestMacros.h */,
+				C90F7131112858CE009EE258 /* GHTestRunner.h */,
+				C90F7132112858CE009EE258 /* GHTestSuite.h */,
+				C90F7133112858CE009EE258 /* GHUnit.h */,
+				C90F7134112858CE009EE258 /* GHUnitIPhoneAppDelegate.h */,
+				C90F7135112858CE009EE258 /* GHUnitIPhoneTestMain.m */,
+				C90F7136112858CE009EE258 /* GHUNSObject+Swizzle.h */,
+				C90F7138112858CE009EE258 /* Makefile */,
+				C90F7139112858CE009EE258 /* NSException+GHTestFailureExceptions.h */,
+				C90F713A112858CE009EE258 /* NSValue+GHValueFormatter.h */,
+				C90F713B112858CE009EE258 /* RunTests.sh */,
+			);
+			name = "libGHUnitIPhone3_0-0.4.18";
+			path = "Libraries/libGHUnitIPhone3_0-0.4.18";
+			sourceTree = "<group>";
+		};
+		C92F1FDE1038A62D006B0A86 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C90F712A112858CE009EE258 /* libGHUnitIPhone3_0-0.4.18 */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C92F21531038B495006B0A86 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C98BC0A21039F94200E63F84 /* DAOFactoryTestCase.m */,
+				C97B15C511284F9B002AD48D /* CDFilterFactoryTestCase.m */,
+				C92F21541038B495006B0A86 /* CDFilterJunctionTestCase.m */,
+				C92F21551038B495006B0A86 /* CDFilterTestCase.m */,
+				C92F21561038B495006B0A86 /* CDSearchCriteriaTestCase.m */,
+				C98ED8A01081D451006EAFEC /* CDNullFilterTestCase.m */,
+				C9CCCCA01087A39000350FDD /* CDOrderTestCase.m */,
+				C9113D73109CCB5E00F0134B /* CDProjectionTestCase.m */,
+				C9113DFA109CD59500F0134B /* CDFunctionTestCase.m */,
+				C9860010108A13D200900C3E /* Test.xcdatamodel */,
+				C98BC0AE1039F9C300E63F84 /* test.sqlite */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C98BBFE41039F61A00E63F84 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				C98BBFE51039F61A00E63F84 /* DAO.h */,
+				C98BBFE61039F61A00E63F84 /* DAOBase.h */,
+				C98BBFE71039F61A00E63F84 /* DAOBase.m */,
+				C98BBFE81039F61A00E63F84 /* DAOFactory.h */,
+				C98BBFE91039F61A00E63F84 /* DAOFactory.m */,
+				C98BBFEA1039F61A00E63F84 /* RuntimeDAO.h */,
+				C98BBFEB1039F61A00E63F84 /* RuntimeDAO.m */,
+			);
+			name = Dao;
+			path = Classes/Dao;
+			sourceTree = "<group>";
+		};
+		C99A00EE108655B40037B60E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C9B0264E1039DA02007A11D0 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				C97B15DA11285052002AD48D /* CDFilterFactory.h */,
+				C98BBFCD1039F5B200E63F84 /* DAO.h */,
+				C9B0264F1039DA25007A11D0 /* Persistence.h */,
+				C92F1F671038A597006B0A86 /* CDCriteria.h */,
+				C92F1F681038A597006B0A86 /* CDCriteriaElement.h */,
+				C92F1F6A1038A597006B0A86 /* CDEqualFilter.h */,
+				C92F1F6C1038A597006B0A86 /* CDFilter.h */,
+				C92F1F6E1038A597006B0A86 /* CDFilterConjunction.h */,
+				C92F1F701038A597006B0A86 /* CDFilterDisjunction.h */,
+				C92F1F721038A597006B0A86 /* CDFilterJunction.h */,
+				C9AD9573109CC0B6000B71DA /* CDFunction.h */,
+				C92F1F761038A597006B0A86 /* CDLikeFilter.h */,
+				7F64DB0B17AFCE4500A0446D /* CDContainsFilter.h */,
+				C9284DD11081D92C008567C6 /* CDNullFilter.h */,
+				C92F1F781038A597006B0A86 /* CDOperatorFilter.h */,
+				C92F1F7A1038A597006B0A86 /* CDOrder.h */,
+				C92F1F7C1038A597006B0A86 /* CDProjection.h */,
+				C92F1F7E1038A597006B0A86 /* CDSearchCriteria.h */,
+			);
+			name = Includes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B026581039DA35007A11D0 /* Persistence.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* Persistence_Prefix.pch in Headers */,
+				C92F1F801038A597006B0A86 /* CDCriteria.h in Headers */,
+				C92F1F811038A597006B0A86 /* CDCriteriaElement.h in Headers */,
+				C92F1F831038A597006B0A86 /* CDEqualFilter.h in Headers */,
+				C92F1F851038A597006B0A86 /* CDFilter.h in Headers */,
+				C92F1F871038A597006B0A86 /* CDFilterConjunction.h in Headers */,
+				C92F1F891038A597006B0A86 /* CDFilterDisjunction.h in Headers */,
+				C92F1F8B1038A597006B0A86 /* CDFilterJunction.h in Headers */,
+				C92F1F8F1038A597006B0A86 /* CDLikeFilter.h in Headers */,
+				C92F1F911038A597006B0A86 /* CDOperatorFilter.h in Headers */,
+				C92F1F931038A597006B0A86 /* CDOrder.h in Headers */,
+				C92F1F951038A597006B0A86 /* CDProjection.h in Headers */,
+				C92F1F971038A597006B0A86 /* CDSearchCriteria.h in Headers */,
+				C98BBE3E1039EB7300E63F84 /* common_defines.h in Headers */,
+				C98BBFD71039F5B200E63F84 /* DAO.h in Headers */,
+				C98BBFF01039F61A00E63F84 /* DAOBase.h in Headers */,
+				C98BBFF21039F61A00E63F84 /* DAOFactory.h in Headers */,
+				C98BBFF41039F61A00E63F84 /* RuntimeDAO.h in Headers */,
+				C9284DD41081D92C008567C6 /* CDNullFilter.h in Headers */,
+				7F64DB1117AFD1E800A0446D /* CDContainsFilter.h in Headers */,
+				C9AD9574109CC0B6000B71DA /* CDFunction.h in Headers */,
+				C97B15DB11285052002AD48D /* CDFilterFactory.h in Headers */,
+				7F067E1F17DDFDD4001055B4 /* EncryptedStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C92F1FE41038A675006B0A86 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92F1FEA1038A676006B0A86 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				C92F1FE11038A675006B0A86 /* Resources */,
+				C92F1FE21038A675006B0A86 /* Sources */,
+				C92F1FE31038A675006B0A86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C92F1FFC1038A6DF006B0A86 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = C92F1FE51038A675006B0A86 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2AAC07D0554694100DB518D /* Persistence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Persistence" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				7FE26003179430D2009F78CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F1B0FEC1992713700E228B1 /* PBXTargetDependency */,
+			);
+			name = Persistence;
+			productName = Persistence;
+			productReference = D2AAC07E0554694100DB518D /* libPersistence.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					7F419B151B0E07E700814DC5 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Persistence" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Persistence */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F1B0FE51992712600E228B1 /* Products */;
+					ProjectRef = 7F1B0FE41992712600E228B1 /* sqlcipher.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Persistence */,
+				C92F1FE41038A675006B0A86 /* Tests */,
+				7F419B151B0E07E700814DC5 /* UniversalPersistenceLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7F1B0FEA1992712600E228B1 /* libsqlcipher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsqlcipher.a;
+			remoteRef = 7F1B0FE91992712600E228B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C92F1FE11038A675006B0A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98BC0AF1039F9C300E63F84 /* test.sqlite in Resources */,
+				C90F713F112858CE009EE258 /* RunTests.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FE26003179430D2009F78CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Version 2.0 (updated for Xcode 4, with some fixes)\n# Changes:\n#    - Works with xcode 4, even when running xcode 3 projects (Workarounds for apple bugs)\n#    - Faster / better: only runs lipo once, instead of once per recursion\n#    - Added some debugging statemetns that can be switched on/off by changing the DEBUG_THIS_SCRIPT variable to \"true\"\n#    - Fixed some typos\n#\n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n# Next, work out if we're in SIM or DEVICE\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nACTION=\"build\"\n#Merge all platform binaries as a fat binary for each configurations.\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n#rm -rf \"${CREATING_UNIVERSAL_DIR}\"\n#mkdir \"${CREATING_UNIVERSAL_DIR}\"\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n# * needs to be outside the double quotes?\ncp \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\nfi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C92F1FE21038A675006B0A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90F710C112856A6009EE258 /* CDFilterFactory.m in Sources */,
+				C90F711E11285716009EE258 /* CDFilterFactoryTestCase.m in Sources */,
+				C92F20191038A7F3006B0A86 /* CDCriteriaElement.m in Sources */,
+				C92F201A1038A7F3006B0A86 /* CDEqualFilter.m in Sources */,
+				C92F201B1038A7F3006B0A86 /* CDFilter.m in Sources */,
+				C92F201C1038A7F3006B0A86 /* CDFilterConjunction.m in Sources */,
+				C92F201D1038A7F3006B0A86 /* CDFilterDisjunction.m in Sources */,
+				C92F201E1038A7F3006B0A86 /* CDFilterJunction.m in Sources */,
+				C92F20211038A7F3006B0A86 /* CDLikeFilter.m in Sources */,
+				C92F20221038A7F3006B0A86 /* CDOperatorFilter.m in Sources */,
+				C92F20231038A7F3006B0A86 /* CDOrder.m in Sources */,
+				C92F20241038A7F3006B0A86 /* CDProjection.m in Sources */,
+				C92F20251038A7F3006B0A86 /* CDSearchCriteria.m in Sources */,
+				C92F21571038B495006B0A86 /* CDFilterJunctionTestCase.m in Sources */,
+				C92F21581038B495006B0A86 /* CDFilterTestCase.m in Sources */,
+				C92F21591038B495006B0A86 /* CDSearchCriteriaTestCase.m in Sources */,
+				C98BBFEC1039F61A00E63F84 /* DAOBase.m in Sources */,
+				C98BBFED1039F61A00E63F84 /* DAOFactory.m in Sources */,
+				C98BBFEE1039F61A00E63F84 /* RuntimeDAO.m in Sources */,
+				C98BC0A31039F94200E63F84 /* DAOFactoryTestCase.m in Sources */,
+				C98ED8A11081D451006EAFEC /* CDNullFilterTestCase.m in Sources */,
+				C9284DD31081D92C008567C6 /* CDNullFilter.m in Sources */,
+				C9CCCCA11087A39000350FDD /* CDOrderTestCase.m in Sources */,
+				C9860011108A13D200900C3E /* Test.xcdatamodel in Sources */,
+				C9AD9576109CC0C2000B71DA /* CDFunction.m in Sources */,
+				C9113D74109CCB5E00F0134B /* CDProjectionTestCase.m in Sources */,
+				C9113DFB109CD59500F0134B /* CDFunctionTestCase.m in Sources */,
+				C90F713C112858CE009EE258 /* GHUnitIPhoneTestMain.m in Sources */,
+				C90F713E112858CE009EE258 /* Makefile in Sources */,
+				7F067E2117DDFDD4001055B4 /* EncryptedStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92F1F821038A597006B0A86 /* CDCriteriaElement.m in Sources */,
+				C92F1F841038A597006B0A86 /* CDEqualFilter.m in Sources */,
+				C92F1F861038A597006B0A86 /* CDFilter.m in Sources */,
+				C92F1F881038A597006B0A86 /* CDFilterConjunction.m in Sources */,
+				C92F1F8A1038A597006B0A86 /* CDFilterDisjunction.m in Sources */,
+				C92F1F8C1038A597006B0A86 /* CDFilterJunction.m in Sources */,
+				C92F1F901038A597006B0A86 /* CDLikeFilter.m in Sources */,
+				C92F1F921038A597006B0A86 /* CDOperatorFilter.m in Sources */,
+				C92F1F941038A597006B0A86 /* CDOrder.m in Sources */,
+				C92F1F961038A597006B0A86 /* CDProjection.m in Sources */,
+				C92F1F981038A597006B0A86 /* CDSearchCriteria.m in Sources */,
+				C98BBFF11039F61A00E63F84 /* DAOBase.m in Sources */,
+				C98BBFF31039F61A00E63F84 /* DAOFactory.m in Sources */,
+				C98BBFF51039F61A00E63F84 /* RuntimeDAO.m in Sources */,
+				C9284DD51081D92C008567C6 /* CDNullFilter.m in Sources */,
+				C9AD9577109CC0C2000B71DA /* CDFunction.m in Sources */,
+				C97B15DE11285062002AD48D /* CDFilterFactory.m in Sources */,
+				7F64DB0D17AFCE8600A0446D /* CDContainsFilter.m in Sources */,
+				7F067E2017DDFDD4001055B4 /* EncryptedStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F1B0FEC1992713700E228B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlcipher;
+			targetProxy = 7F1B0FEB1992713700E228B1 /* PBXContainerItemProxy */;
+		};
+		C92F1FFC1038A6DF006B0A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* Persistence */;
+			targetProxy = C92F1FFB1038A6DF006B0A86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jozef Bo�ek (KZ32337Y2R)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Persistence.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Persistence_Prefix.pch;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhoneCL3_0-0.3.14\"",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhone3_0-0.4.18\"",
+					"$(PROJECT_DIR)/vendor/sqlcipher/.libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				PRODUCT_NAME = Persistence;
+				PROVISIONING_PROFILE = "A561794A-9B0D-4825-9A5B-D00560CA7B79";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/Persistence.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Persistence_Prefix.pch;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhoneCL3_0-0.3.14\"",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhone3_0-0.4.18\"",
+					"$(PROJECT_DIR)/vendor/sqlcipher/.libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				PRODUCT_NAME = Persistence;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = sqlcipher;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DSQLITE_HAS_CODEC";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		7F419B171B0E07E700814DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F419B181B0E07E700814DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C92F1FE81038A675006B0A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhoneCL3_0-0.3.14\"",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhone3_0-0.4.18\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C92F1FE91038A675006B0A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhoneCL3_0-0.3.14\"",
+					"\"$(SRCROOT)/Libraries/libGHUnitIPhone3_0-0.4.18\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Persistence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Persistence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F419B161B0E07E700814DC5 /* Build configuration list for PBXAggregateTarget "UniversalPersistenceLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F419B171B0E07E700814DC5 /* Debug */,
+				7F419B181B0E07E700814DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C92F1FEA1038A676006B0A86 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92F1FE81038A675006B0A86 /* Debug */,
+				C92F1FE91038A675006B0A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

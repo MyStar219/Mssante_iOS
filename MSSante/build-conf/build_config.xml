@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DEFINE YOUR PROJECT NAME AND PATH FOR ANT -->
+<project name="MSSante" basedir="../MSSante">
+    <!-- ___________________________________________ -->
+
+    <target name="build-and-package" description="build and package your iPhone App">
+
+        <exec executable="git">
+            <arg value="config"/>
+            <arg value="--global"/>
+            <arg value="http.proxy"/>
+            <arg value="http://proxy:3128"/>
+        </exec>
+
+        <exec executable="security">
+            <arg value="unlock-keychain"/>
+            <arg value="-p"/>
+            <arg value="${build_keychain_password}"/>
+            <arg value="/Users/${build_username}/Library/Keychains/login.keychain"/>
+        </exec>
+
+        <exec executable="xcodebuild">
+            <arg value="-project"/>
+            <arg value="${basedir}/../MSSante.xcodeproj"/>
+            <arg value="-target"/>
+            <arg value="${ant.target}"/>
+            <arg value="-configuration"/>
+            <arg value="${ant.configuration}"/>
+            <arg value="clean"/>
+            <arg value="build"/>
+            <arg value="CONFIGURATION_BUILD_DIR=${basedir}/../build/MSSante-iphoneos"/>
+            <arg value="CODE_SIGN_IDENTITY=${ant.sign_identity}"/>
+            <arg value="PROVISIONING_PROFILE=${ant.UUID}"/>
+        </exec>
+
+        <chmod file="${basedir}/../build/MSSante-iphoneos/MSSante.app" perm="755"/>
+
+        <exec executable="xcrun">
+            <arg value="-sdk"/>
+            <arg value="iphoneos"/>
+            <arg value="PackageApplication"/>
+            <arg value="-v"/>
+            <arg value="${basedir}/../build/MSSante-iphoneos/MSSante.app"/>
+            <arg value="-o"/>
+            <arg value="${basedir}/../build/MSSante-iphoneos/MSSante.ipa"/>
+        </exec>
+
+        <mkdir dir="${jenkins.workspace}/build-versions" />
+        <mkdir dir="${jenkins.workspace}/build-versions/${ant.bundle_version}" />
+        <copy file="${basedir}/../build/MSSante-iphoneos/MSSante.ipa" tofile="${jenkins.workspace}/build-versions/${ant.bundle_version}/MSSante-${ant.bundle_version}-${ant.configuration}.ipa"/>
+
+        <exec executable="zip" dir="${basedir}/../build/MSSante-iphoneos/">
+            <arg value="-r"/>
+            <arg value="${jenkins.workspace}/build-versions/${ant.bundle_version}/MSSante-${ant.bundle_version}-${ant.configuration}.app.dSYM.zip"/>
+            <arg value="MSSante.app.dSYM"/>
+        </exec>
+    </target>
+
+
+    <target name="deploy-appgarden"  description="deploy your app to appgarden">
+
+        <!-- Dynamic variables -->
+        <macrodef name="propertycopy">
+          <attribute name="name"/>
+          <attribute name="from"/>
+          <sequential>
+            <property name="@{name}" value="${@{from}}"/>
+          </sequential>
+        </macrodef>
+
+        <propertycopy name="akey" from="ant.appg_a_${ant.configuration}"/>
+        <propertycopy name="ukey" from="ant.appg_ukey_${ant.configuration}"/>
+
+        <exec executable="curl">
+            <arg value="--insecure"/>
+            <arg value="-F note=${ant.deploy_note}"/>
+            <arg value="-F binaryfile=@${jenkins.workspace}/build-versions/${ant.bundle_version}/MSSante-${ant.bundle_version}-${ant.configuration}.ipa"/>
+            <arg value="-F a=${akey} "/>
+            <arg value="-F ukey=${ukey}"/>
+            <arg value="https://appgarden.aw.atos.net/upload_version"/>
+        </exec>
+    </target>
+    
+</project>

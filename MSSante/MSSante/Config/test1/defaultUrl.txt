@@ -1,0 +1,24 @@
+//
+//  defaultUrl.h
+//  MSSante
+//
+//  Created by Labinnovation on 10/04/2015.
+//  Copyright (c) 2015 Capgemini. All rights reserved.
+//
+
+#ifndef MSSante_defaultUrl_h
+#define MSSante_defaultUrl_h
+
+
+#define DEFAULT_ENV                    @"test1"
+
+//all Logs
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define ConnectionLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+
+//kProd Capgemini => distrib
+//kProd ASIP => prod2
+#define kProd @"distrib" 
+
+#endif

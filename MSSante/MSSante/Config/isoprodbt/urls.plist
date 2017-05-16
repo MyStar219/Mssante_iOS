@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>SERVER_IDP</key>
+		<string>https://mss-idp.iso-production.mssante.fr:443/</string>
+
+		<key>SERVER_MSS</key>
+		<string>https://mss-msg.iso-production.mssante.fr:443/</string>
+
+		<key>SERVER_ENROLLEMENT</key>
+		<string>https://mss-auth.iso-production.mssante.fr:443/</string>
+
+		<key>ID_PROVIDER_DOMAIN</key>
+		<string>https://mss-idp.iso-production.mssante.fr:443</string>
+		
+	<dict/>
+</plist>
